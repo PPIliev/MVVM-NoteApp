@@ -48,11 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onActivityResult(ActivityResult result) {
                         int resultCode = result.getResultCode();
                         Intent data = result.getData();
-                        if (data != null) {
-                            int requestCode = data.getIntExtra(AddEditNoteActivity.REQUEST_CODE, 1);
-
-                        }
-
+                        
                         if (resultCode == Activity.RESULT_OK) {
                             int requestCode = data.getIntExtra(AddEditNoteActivity.REQUEST_CODE, 1);
 
